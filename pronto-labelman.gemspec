@@ -22,5 +22,8 @@ Gem::Specification.new do |s|
   s.add_dependency 'pronto', '~> 0.6'
   s.add_development_dependency 'rake', '~> 10.3'
   s.add_development_dependency 'rspec', '~> 3.0'
-  s.add_development_dependency 'rspec-its', '~> 1.0'
+  s.add_development_dependency 'rspec-its', '~> 1.0',
+  s.add_development_dependency 'pry-byebug'
+  s.add_development_dependency 'pry-rescue'
+  s.add_development_dependency 'pry-stack_explorer'
 end
