@@ -5,7 +5,7 @@ require 'pronto/labelman_rules/rule'
 
 module Pronto
   class Labelman < Runner
-    def initialize(_, _ = nil)
+    def initialize(patches, commit = nil)
       super
 
       @rules_load_path = ENV['LABELMAN_RULES']
