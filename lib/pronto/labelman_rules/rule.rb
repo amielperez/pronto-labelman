@@ -6,11 +6,11 @@ module Pronto
       end
 
       def self.label(name)
-        @@label = name
+        define_method('label_name') { name }
       end
 
       def apply
-        Pronto::Label.new(@@label) if applicable?
+        Pronto::Label.new(label_name) if applicable?
       end
 
       def applicable?
