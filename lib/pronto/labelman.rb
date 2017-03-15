@@ -10,6 +10,7 @@ module Pronto
 
       @rules_load_path = ENV['LABELMAN_RULES']
       if @rules_load_path
+        p "Using additional rules load path #{File.absolute_path("#{__dir__}/bin")}"
         require_and_load_rules
       end
     end

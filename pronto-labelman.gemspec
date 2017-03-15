@@ -11,7 +11,7 @@ Gem::Specification.new do |s|
   s.email = 'perezamiel@yahoo.com'
   s.homepage = 'http://github.org/amielperez/pronto-labelman'
   s.summary = 'Pronto runner for that labels PRs automatically based on rules'
-
+  s.description = s.summary
   s.required_rubygems_version = '>= 1.3.6'
   s.license = 'MIT'
 
