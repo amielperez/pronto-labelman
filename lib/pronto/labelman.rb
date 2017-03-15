@@ -9,8 +9,9 @@ module Pronto
       super
 
       @rules_load_path = ENV['LABELMAN_RULES']
+
       if @rules_load_path
-        p "Using additional rules load path #{File.absolute_path("#{__dir__}/bin")}"
+        p "Using additional rules load path #{File.absolute_path(@rules_load_path)}"
         require_and_load_rules
       end
     end
@@ -36,7 +37,8 @@ module Pronto
     end
 
     def require_and_load_rules
-      Dir["#{@rules_load_path}/*.rb"].each do |file|
+      load_dir = "#{File.absolute_path(@rules_load_path)}/*.rb"
+      Dir[load_dir].each do |file|
         require file
         load file
       end
