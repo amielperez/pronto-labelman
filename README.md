@@ -1,5 +1,3 @@
->:warning: This project is still a WIP
-
 ## Pronto-Labelman
 
 ![pronto-labelman-icon](https://cloud.githubusercontent.com/assets/5194847/23691790/a88578d0-0405-11e7-9492-0ac8ec32d545.png)
@@ -24,7 +22,6 @@ Install the gem
 ```
 gem install pronto-labelman
 ```
->Actually, this is not yet in rubygems.org. It is however in our private gem repo, so this bit is really for people who has access to that.
 
 Invoke from pronto. Set `github_pr_label` as formatter (`-f`) and `labelman` as runner (`-r`)
 
@@ -87,6 +84,5 @@ export LABELMAN_RULES=custom/pronto/labelman_rules
 ```
 
 ### Todo List
-* Put this in rubygems
 * Improve "monkey patching"
 * More configuration
