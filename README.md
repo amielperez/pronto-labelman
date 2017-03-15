@@ -37,6 +37,12 @@ export LABELMAN_RULES=path/to/custom/pronto/labelman_rules
 pronto run -f github_pr_label -c $BASE_BRANCH_SHA -r labelman
 ```
 
+### Technical Details
+
+* Introduces a new formatter called `Pronto::Formatter::GithubPRLabelFormatter`. Unlike the built-in formatters in pronto that post comments on a Pull Request, this formatter attaches labels. Pronto does not come pre-package with something like that so I had to make my own.
+* Moreover, because formatter types are hardcoded in `Pronto::Formatter`, I had to monkey-patch that class to add my custom formatter 'Pronto::Formatter::GithubPRLabelFormatter`.
+* Still related to that, pronto's Github client does not expose an API with interacting with labels on an issue (like a pull request), so I had to again monkey patch its Github client `Pronto::Github` to add a method that exposes the add a label API.
+
 ### Creating Rules
 1. Subclass `Pronto::LabelmanRules::Rule`. Make sure your subclass is in the namespace `Pronto::LabelmanRules`
 
