@@ -1,6 +1,8 @@
 ## Pronto-Labelman
 
-![pronto-labelman-icon](https://cloud.githubusercontent.com/assets/5194847/23691790/a88578d0-0405-11e7-9492-0ac8ec32d545.png)
+<p align="center">
+  <img src="https://cloud.githubusercontent.com/assets/5194847/23691790/a88578d0-0405-11e7-9492-0ac8ec32d545.png" alt="pronto-labelman logo"></img>
+</p>
 
 ### Pronto runner for automatically adding labels to Github Pull Requests.
 
@@ -85,4 +87,5 @@ export LABELMAN_RULES=custom/pronto/labelman_rules
 
 ### Todo List
 * Improve "monkey patching"
+* Improve logging (do not use `p`)
 * More configuration
