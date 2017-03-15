@@ -1,7 +1,7 @@
 ## Pronto-Labelman
 
 <p align="center">
-  <img src="https://cloud.githubusercontent.com/assets/5194847/23691790/a88578d0-0405-11e7-9492-0ac8ec32d545.png" alt="pronto-labelman logo"></img>
+  <img src="https://cloud.githubusercontent.com/assets/5194847/23930916/406685ae-096a-11e7-9c35-f6d4daddb68f.png" alt="pronto-labelman logo"></img>
 </p>
 
 ### Pronto runner for automatically adding labels to Github Pull Requests.
